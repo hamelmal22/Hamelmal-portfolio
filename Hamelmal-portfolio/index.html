@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamelmal | Portfolio</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">Hamelmal<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">HOME</a></li>
+        <li><a href="#projects" class="nav-link">WORK</a></li>
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><button id="theme-toggle" aria-label="Toggle Theme" class="theme-btn">🌙</button></li>
+        <li><a href="#contact" class="btn-secondary">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero-section container">
+    <div class="hero-content">
+      <span class="badge">Available for projects</span>
+      <h1>Crafting Digital <br><span class="gradient-text">Experiences That Matter</span></h1>
+      <p>I design and build clean, functional, and high-performing websites using modern web technologies.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-text">Get in touch &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section container reveal-on-scroll">
+    <div class="section-header">
+      <h2>Featured Projects</h2>
+      <p>A selection of recent applications and web development builds.</p>
+      
+      <!-- Project Filter Control -->
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="frontend">Frontend & JS</button>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card" data-category="fullstack">
+        <div class="project-image">
+          <div class="image-placeholder">E-commerce platform</div>
+        </div>
+        <div class="project-info">
+          <span class="project-category">Full Stack Dev</span>
+          <h3>Modern E-commerce Portal</h3>
+          <p>Built with clean PHP, custom SQL databases, and responsive CSS grids.</p>
+          <a href="#" class="project-link">Explore case study &rarr;</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="frontend">
+        <div class="project-image">
+          <div class="image-placeholder">Interactive web application</div>
+        </div>
+        <div class="project-info">
+          <span class="project-category">Frontend & JS</span>
+          <h3>Interactive Dashboard App</h3>
+          <p>Designed with real-time UI components and dynamic data manipulation.</p>
+          <a href="#" class="project-link">Explore case study &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section container reveal-on-scroll">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>I build with clean code and deep purpose</h2>
+        <p>I'm a dedicated web developer focused on creating fast, interactive, and beautifully organized web projects. I specialize in writing structured code that bridges the gap between clean visuals and solid functionality.</p>
+      </div>
+      <div class="skills-tags">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>PHP</span>
+        <span>SQL</span>
+        <span>Git & Github</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section container reveal-on-scroll">
+    <div class="contact-card">
+      <h2>Let's build something beautiful together</h2>
+      <p>Ready to start a project or just want to chat? Drop me a message.</p>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" required placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <!-- Added crucial email field -->
+          <input type="email" id="email" required placeholder="Your Email">
+        </div>
+        <div class="form-group">
+          <textarea id="message" required placeholder="Your Message" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+        <div id="form-feedback" class="form-feedback hidden"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Hamelmal. Crafted with care.</p>
+      <div class="footer-links">
+        <a href="https://github.com/hamelmal22">Github</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
